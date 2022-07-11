@@ -4,9 +4,12 @@ import Actions from "./actions";
 
 
 const Wrapper = styled.div`
-  width: 600px;
+  width: 90%;
   margin: auto;
   color: #585858;
+  @media(min-width: 650px){
+      width: 600px;
+  }
 `;
 
 const PrintWrapper = styled.div``;

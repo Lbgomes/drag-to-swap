@@ -3,12 +3,14 @@ import PrintPage from "../components/printPage";
 import styled from "styled-components";
 
 const PageHeader = styled.div`
-  width: 600px;
+  width: 90%;
   margin: auto;
   border-bottom: 1px solid #e4e4e4;
   margin-bottom: 42px;
   padding-bottom: 24px;
-
+  @media(min-width: 650px){
+      width: 600px;
+  }
   h1 {
     font-weight: 700;
     font-size: 28px;
