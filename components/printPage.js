@@ -39,7 +39,9 @@ const PageLayout = styled.div`
 
 `;
 const PrintPhoto = styled.div`
+user-select: none;
   img {
+    user-select: none;
     border-radius: 4px;
     max-width: 100%;
   }
@@ -54,6 +56,7 @@ export default function PrintPage({data}) {
       const dropWord = (event, item) => {
         let tempDropImg = item.src;
         let tempDragImg = newState.dragImgSrc;
+        
         setState({
           dropImgSrc: item.src,
           arr: state.arr.map(el => {
